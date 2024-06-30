@@ -11,7 +11,7 @@ import SwiftUI
 struct DenkariumApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(collections: Collection.sampleData)
         }
     }
 }

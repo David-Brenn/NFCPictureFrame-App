@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92FB9DA2C2C63E600BB5ED8 /* Controll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92FB9D92C2C63E600BB5ED8 /* Controll.swift */; };
+		A938FB132C301D3A00FEEA2B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938FB122C301D3A00FEEA2B /* WebService.swift */; };
+		A938FB152C3020B500FEEA2B /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A938FB142C3020B500FEEA2B /* Status.swift */; };
+		A94EC6D52C289E590058D054 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6D42C289E590058D054 /* Theme.swift */; };
+		A94EC6D72C298F500058D054 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6D62C298F500058D054 /* Collection.swift */; };
+		A94EC6D92C2991DC0058D054 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6D82C2991DC0058D054 /* CollectionView.swift */; };
+		A94EC6DB2C29933F0058D054 /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6DA2C29933F0058D054 /* CollectionsView.swift */; };
+		A94EC6DD2C299AA20058D054 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6DC2C299AA20058D054 /* CollectionDetailView.swift */; };
+		A94EC6DF2C299C070058D054 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94EC6DE2C299C070058D054 /* MediaView.swift */; };
 		A95548552C2891910003E940 /* DenkariumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95548542C2891910003E940 /* DenkariumApp.swift */; };
 		A95548572C2891910003E940 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95548562C2891910003E940 /* ContentView.swift */; };
 		A95548592C2891950003E940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95548582C2891950003E940 /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92FB9D92C2C63E600BB5ED8 /* Controll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controll.swift; sourceTree = "<group>"; };
+		A938FB122C301D3A00FEEA2B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A938FB142C3020B500FEEA2B /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		A94EC6D42C289E590058D054 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A94EC6D62C298F500058D054 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		A94EC6D82C2991DC0058D054 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		A94EC6DA2C29933F0058D054 /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
+		A94EC6DC2C299AA20058D054 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		A94EC6DE2C299C070058D054 /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
 		A95548512C2891910003E940 /* Denkarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Denkarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95548542C2891910003E940 /* DenkariumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenkariumApp.swift; sourceTree = "<group>"; };
 		A95548562C2891910003E940 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A94EC6D32C289CF90058D054 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A938FB142C3020B500FEEA2B /* Status.swift */,
+				A94EC6D62C298F500058D054 /* Collection.swift */,
+				A94EC6D42C289E590058D054 /* Theme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A95548482C2891910003E940 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +79,15 @@
 		A95548532C2891910003E940 /* Denkarium */ = {
 			isa = PBXGroup;
 			children = (
+				A938FB122C301D3A00FEEA2B /* WebService.swift */,
+				A92FB9D92C2C63E600BB5ED8 /* Controll.swift */,
+				A94EC6DC2C299AA20058D054 /* CollectionDetailView.swift */,
+				A94EC6DE2C299C070058D054 /* MediaView.swift */,
+				A94EC6DA2C29933F0058D054 /* CollectionsView.swift */,
+				A94EC6D82C2991DC0058D054 /* CollectionView.swift */,
 				A95548542C2891910003E940 /* DenkariumApp.swift */,
 				A95548562C2891910003E940 /* ContentView.swift */,
+				A94EC6D32C289CF90058D054 /* Models */,
 				A95548582C2891950003E940 /* Assets.xcassets */,
 				A955485A2C2891950003E940 /* Preview Content */,
 			);
@@ -137,8 +172,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94EC6D52C289E590058D054 /* Theme.swift in Sources */,
+				A94EC6D92C2991DC0058D054 /* CollectionView.swift in Sources */,
+				A94EC6DD2C299AA20058D054 /* CollectionDetailView.swift in Sources */,
+				A94EC6DB2C29933F0058D054 /* CollectionsView.swift in Sources */,
+				A938FB152C3020B500FEEA2B /* Status.swift in Sources */,
+				A92FB9DA2C2C63E600BB5ED8 /* Controll.swift in Sources */,
 				A95548572C2891910003E940 /* ContentView.swift in Sources */,
+				A94EC6DF2C299C070058D054 /* MediaView.swift in Sources */,
 				A95548552C2891910003E940 /* DenkariumApp.swift in Sources */,
+				A938FB132C301D3A00FEEA2B /* WebService.swift in Sources */,
+				A94EC6D72C298F500058D054 /* Collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
