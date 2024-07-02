@@ -18,15 +18,7 @@ struct MainView: View {
     let collections: [Collection]
     var body: some View {
         TabView(){
-            NavigationStack(){
-                ScrollView(.vertical){
-                        CollectionsView()
-                }
-                .navigationTitle("Collections")
-                .navigationDestination(for: Collection.self){collection in
-                CollectionDetailView(collection: collection)
-                }
-            }
+            CollectionsView()
                 .tabItem{
                     Image(systemName: "folder")
                     Text("Collection")
