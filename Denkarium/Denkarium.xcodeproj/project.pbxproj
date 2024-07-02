@@ -24,6 +24,7 @@
 		A985A05F2C31E70500A587AD /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A05E2C31E70500A587AD /* CollectionsView.swift */; };
 		A985A0612C31EC7400A587AD /* FileMangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A0602C31EC7400A587AD /* FileMangerView.swift */; };
 		A985A06B2C34368800A587AD /* AMSMB2 in Frameworks */ = {isa = PBXBuildFile; productRef = A985A06A2C34368800A587AD /* AMSMB2 */; };
+		A985A06F2C34373B00A587AD /* SMBClienent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A06E2C34373B00A587AD /* SMBClienent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A955485B2C2891950003E940 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A985A05E2C31E70500A587AD /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		A985A0602C31EC7400A587AD /* FileMangerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMangerView.swift; sourceTree = "<group>"; };
+		A985A06E2C34373B00A587AD /* SMBClienent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMBClienent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		A95548532C2891910003E940 /* Denkarium */ = {
 			isa = PBXGroup;
 			children = (
+				A985A06E2C34373B00A587AD /* SMBClienent.swift */,
 				A985A0602C31EC7400A587AD /* FileMangerView.swift */,
 				A985A05E2C31E70500A587AD /* CollectionsView.swift */,
 				A938FB122C301D3A00FEEA2B /* WebService.swift */,
@@ -204,6 +207,7 @@
 				A95548552C2891910003E940 /* DenkariumApp.swift in Sources */,
 				A938FB132C301D3A00FEEA2B /* WebService.swift in Sources */,
 				A94EC6D72C298F500058D054 /* Collection.swift in Sources */,
+				A985A06F2C34373B00A587AD /* SMBClienent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
