@@ -88,11 +88,19 @@ struct Controll: View {
                             .keyboardType(.numberPad)
                             .frame(width: 30)
                     }
-                    Text("Root Folder")
+                    Text("Media Server IP")
+                    Text("Media Server User")
+                    Text("Media Server Password")
+                    Text("Media Server Share name")
+                    
                 }
                 Section("Status"){
-                    if(selectedStatus == Status.offline){
-                        Text("Offline")
+                    HStack{
+                        Text("Slide Show: ")
+                        Spacer()
+                        if(selectedStatus == Status.offline){
+                            Text("Offline")
+                        }
                     }
                     Picker("Status", selection: $selectedStatus) {
                         Text("Offline").tag(Status.offline)
@@ -104,10 +112,13 @@ struct Controll: View {
                     .cornerRadius(8)
                     .padding()
                     .disabled(selectedStatus == Status.offline)
+                    HStack{
+                        Text("Media Server: ")
+                        Spacer()
+                        Text("Offline")
+                    }
                 }
-                Text(statusVM.statusData.status)
             }
-            Spacer()
         }
         .onChange(of: selectedStatus){ newValue in
             Task{

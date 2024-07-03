@@ -23,9 +23,24 @@
 		A955485C2C2891950003E940 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A955485B2C2891950003E940 /* Preview Assets.xcassets */; };
 		A985A05F2C31E70500A587AD /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A05E2C31E70500A587AD /* CollectionsView.swift */; };
 		A985A0612C31EC7400A587AD /* FileMangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A0602C31EC7400A587AD /* FileMangerView.swift */; };
-		A985A06B2C34368800A587AD /* AMSMB2 in Frameworks */ = {isa = PBXBuildFile; productRef = A985A06A2C34368800A587AD /* AMSMB2 */; };
 		A985A06F2C34373B00A587AD /* SMBClienent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985A06E2C34373B00A587AD /* SMBClienent.swift */; };
+		A985A07F2C34771A00A587AD /* AMSMB2 in Frameworks */ = {isa = PBXBuildFile; productRef = A985A07E2C34771A00A587AD /* AMSMB2 */; };
+		A985A0802C34778100A587AD /* AMSMB2 in Embed Frameworks */ = {isa = PBXBuildFile; productRef = A985A07E2C34771A00A587AD /* AMSMB2 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A985A0712C346B7800A587AD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A985A0802C34778100A587AD /* AMSMB2 in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A92FB9D92C2C63E600BB5ED8 /* Controll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controll.swift; sourceTree = "<group>"; };
@@ -46,6 +61,7 @@
 		A985A05E2C31E70500A587AD /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		A985A0602C31EC7400A587AD /* FileMangerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMangerView.swift; sourceTree = "<group>"; };
 		A985A06E2C34373B00A587AD /* SMBClienent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMBClienent.swift; sourceTree = "<group>"; };
+		A985A07C2C34768400A587AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A985A06B2C34368800A587AD /* AMSMB2 in Frameworks */,
+				A985A07F2C34771A00A587AD /* AMSMB2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +105,7 @@
 		A95548532C2891910003E940 /* Denkarium */ = {
 			isa = PBXGroup;
 			children = (
+				A985A07C2C34768400A587AD /* Info.plist */,
 				A985A06E2C34373B00A587AD /* SMBClienent.swift */,
 				A985A0602C31EC7400A587AD /* FileMangerView.swift */,
 				A985A05E2C31E70500A587AD /* CollectionsView.swift */,
@@ -126,15 +143,16 @@
 				A955484D2C2891910003E940 /* Sources */,
 				A955484E2C2891910003E940 /* Frameworks */,
 				A955484F2C2891910003E940 /* Resources */,
+				A985A0712C346B7800A587AD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A985A06D2C3436A500A587AD /* PBXTargetDependency */,
+				A9D2EA782C34AAD4002729B9 /* PBXTargetDependency */,
 			);
 			name = Denkarium;
 			packageProductDependencies = (
-				A985A06A2C34368800A587AD /* AMSMB2 */,
+				A985A07E2C34771A00A587AD /* AMSMB2 */,
 			);
 			productName = Denkarium;
 			productReference = A95548512C2891910003E940 /* Denkarium.app */;
@@ -165,7 +183,7 @@
 			);
 			mainGroup = A95548482C2891910003E940;
 			packageReferences = (
-				A985A0692C34368800A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */,
+				A985A07D2C34771A00A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */,
 			);
 			productRefGroup = A95548522C2891910003E940 /* Products */;
 			projectDirPath = "";
@@ -214,9 +232,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A985A06D2C3436A500A587AD /* PBXTargetDependency */ = {
+		A9D2EA782C34AAD4002729B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = A985A06C2C3436A500A587AD /* AMSMB2 */;
+			productRef = A9D2EA772C34AAD4002729B9 /* AMSMB2 */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,6 +366,7 @@
 				DEVELOPMENT_TEAM = PQL6M3R4A5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Denkarium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,9 +380,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burnerapps.Denkarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -378,6 +401,7 @@
 				DEVELOPMENT_TEAM = PQL6M3R4A5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Denkarium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,9 +415,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.burnerapps.Denkarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -421,7 +449,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A985A0692C34368800A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */ = {
+		A985A07D2C34771A00A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/amosavian/AMSMB2";
 			requirement = {
@@ -432,14 +460,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A985A06A2C34368800A587AD /* AMSMB2 */ = {
+		A985A07E2C34771A00A587AD /* AMSMB2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A985A0692C34368800A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */;
+			package = A985A07D2C34771A00A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */;
 			productName = AMSMB2;
 		};
-		A985A06C2C3436A500A587AD /* AMSMB2 */ = {
+		A9D2EA772C34AAD4002729B9 /* AMSMB2 */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A985A0692C34368800A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */;
+			package = A985A07D2C34771A00A587AD /* XCRemoteSwiftPackageReference "AMSMB2" */;
 			productName = AMSMB2;
 		};
 /* End XCSwiftPackageProductDependency section */

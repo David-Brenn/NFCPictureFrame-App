@@ -116,6 +116,6 @@ struct CollectionDetailView: View {
 
 struct CollectionDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CollectionDetailView(collection: Collection(name: "Köln", nfcID: "20498382"))
+        CollectionDetailView(collection: Collection(name: "images", nfcID: "20498382"))
     }
 }

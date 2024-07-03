@@ -1,25 +1,20 @@
-//
-//  SMBClienent.swift
-//  Denkarium
-//
-//  Created by David Brenn on 02.07.24.
-//
 
-import Foundation
 import AMSMB2
+import Foundation
+import UIKit
 
 class SMBClient: @unchecked Sendable {
     /// connect to: `smb://guest@XXX.XXX.XX.XX/share`
     
-    let serverURL = URL(string: "smb://XXX.XXX.XX.XX")!
-    let credential = URLCredential(user: "guest", password: "", persistence: URLCredential.Persistence.forSession)
-    let share = "share"
+    let serverURL = URL(string: "smb://192.168.178.82")!
+    let credential = URLCredential(user: "pi", password: "raspberry", persistence: URLCredential.Persistence.forSession)
+    let share = "digitalFrameShare"
     
     lazy private var client = SMB2Manager(url: self.serverURL, credential: self.credential)!
     
     private func connect() async throws -> SMB2Manager {
         // AMSMB2 can handle queueing connection requests
-        try await client.connectShare(name: self.share)
+        try await client.connectShare(name: share)
         return self.client
     }
     
@@ -56,6 +51,27 @@ class SMBClient: @unchecked Sendable {
                 try await client.disconnectShare()
             } catch {
                 print(error)
+            }
+        }
+    }
+    
+    func downloadData(path: String) async -> UIImage?{
+        do {
+            let client = try await self.connect()
+            let progress:SMB2Manager.ReadProgressHandler = SMB2Manager.ReadProgressHandler(nilLiteral: ())
+            let result = try await client.contents(atPath: path,progress:progress)
+            return UIImage(data: result)
+        } catch {
+            return nil
+        }
+    }
+    
+    func uploadData(path: String ,data: Data) {
+        Task {
+            do {
+                let client = try await self.connect()
+                let progressHandler = SMB2Manager.WriteProgressHandler(nilLiteral: ())
+                try await client.write(data: data, toPath: path, progress: progressHandler)
             }
         }
     }
